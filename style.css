@@ -1,13 +1,16 @@
 body { 
-    padding-top: 65px; 
-    background-image: url("./image/rondale151000340.jpg");
+    padding-top: 63px; 
+    background-image: url("./image/bel156_panacea_wood_slat_wallpaper_light_oak_ww1.jpg");
     background-repeat: repeat;
+}
+.jumbotron{
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media only screen and (min-width:992px) {
 .card{
     display: inline-block;
-    max-width: 49.5%;
+    max-width: 49%;
     vertical-align: top;
 }
 .img-fluid{
