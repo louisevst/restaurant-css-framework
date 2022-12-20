@@ -1,5 +1,7 @@
 body { 
     padding-top: 65px; 
+    background-image: url("./image/rondale151000340.jpg");
+    background-repeat: repeat;
 }
 
 @media only screen and (min-width:992px) {
@@ -7,5 +9,8 @@ body {
     display: inline-block;
     max-width: 49.5%;
     vertical-align: top;
+}
+.img-fluid{
+    max-width: 60%;
 }
 }
