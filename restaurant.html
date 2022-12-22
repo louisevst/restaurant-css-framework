@@ -7,6 +7,7 @@
     <link rel="icon" href="./image/ninja-g5a6522168_1280.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
@@ -47,48 +48,11 @@
   <main class="container bg-light p-2 d-flex align-items-center justify-content-center">
     <section class="row w-100 text-center">
       <div class="col-12 col-lg-6">
-        <!--<ul class="list-group">
-          <li class="list-group-item">
-            <div class="mx-auto">
-              <div class="fw-bold">Narutomaki Sainte-Catherine</div>
-              Place Sainte-Catherine, 1<br>
-              1000, Bruxelles
-            </div>
-          </li>
-        </ul>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <div class="mx-auto">
-              <div class="fw-bold">Narutomaki La Hulpe</div>
-              Place communale, 1<br>
-              1310, La Hulpe
-            </div>
-          </li>
-        </ul>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <div class="mx-auto">
-              <div class="fw-bold">Narutomaki Wavre</div>
-              Place Bosch, 1<br>
-              1300, Wavre
-            </div>
-          </li>
-        </ul>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <div class="mx-auto">
-              <div class="fw-bold">Narutomaki LLN</div>
-              Grand place, 1<br>
-              1342, LLN
-            </div>
-          </li>
-        </ul>
-      </div>-->
       <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h2 class="mb-0">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="btn collapsed" onclick="marker.openPopup()" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Narutomaki Sainte-Catherine
               </button>
             </h2>
@@ -107,7 +71,7 @@
         <div class="card">
           <div class="card-header" id="headingTwo">
             <h2 class="mb-0">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="btn collapsed" onclick="marker1.openPopup()" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Narutomaki La Hulpe
               </button>
             </h2>
@@ -125,7 +89,7 @@
         <div class="card">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="btn collapsed" onclick="marker2.openPopup()" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Narutomaki Wavre
               </button>
             </h2>
@@ -143,7 +107,7 @@
         <div class="card">
           <div class="card-header" id="headingOne">
             <h2 class="mb-0">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <button class="btn collapsed" onclick="marker3.openPopup()" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                 Narutomaki LLN
               </button>
             </h2>
@@ -189,130 +153,29 @@
         </div>
     </div>
 </footer>
-<script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
-    ></script>
-    <script>// Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        const stcatherine = { lat: 50.8472, lng: 4.3477 };
-        const lahulpe = {lat:	50.7309955, lng:4.4856707};
-        const wavre = {lat:50.7167, lng:4.6167};
-        const lln = {lat:50.6681, lng:4.6118};
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 10,
-          center: lahulpe,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: stcatherine,
-          map: map,
-          title: "Narutomaki La Hulpe"
-        });
-        const marker1 = new google.maps.Marker({
-          position: lahulpe,
-          map: map,
-        });
-        const marker2 = new google.maps.Marker({
-          position: wavre,
-          map: map,
-        });
-        const marker3 = new google.maps.Marker({
-          position: lln,
-          map: map,
-        });
-        const contentString1 =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    "</div>" +
-    '<h5 id="firstHeading" class="firstHeading">Narutomaki La Hulpe</h5>' +
-    '<div id="bodyContent">' +
-    "<p>Place communale, 1</p>" +
-    "<p>1310, La Hulpe</p>"
-    "</div>" +
-    "</div>";
-        const infowindow1 = new google.maps.InfoWindow({
-    content: contentString1,
-    ariaLabel: "La Hulpe",
-  });
-        marker1.addListener("click", () => {
-    infowindow1.open({
-      anchor: marker1,
-      map,
-    });
-  });
-  const contentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    "</div>" +
-    '<h5 id="firstHeading" class="firstHeading">Narutomaki St Catherine</h5>' +
-    '<div id="bodyContent">' +
-    "<p>Place Sainte catherine, 1</p>" +
-    "<p>1000, Bruxelles</p>"
-    "</div>" +
-    "</div>";
-        const infowindow = new google.maps.InfoWindow({
-    content: contentString,
-    ariaLabel: "st catherine",
-  });
-        marker.addListener("click", () => {
-    infowindow.open({
-      anchor: marker,
-      map,
-    });
-  });
-  const contentString2 =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    "</div>" +
-    '<h5 id="firstHeading" class="firstHeading">Narutomaki Wavre</h5>' +
-    '<div id="bodyContent">' +
-    "<p>Place Bosch, 1</p>" +
-    "<p>1300, Wavre</p>"
-    "</div>" +
-    "</div>";
-        const infowindow2 = new google.maps.InfoWindow({
-    content: contentString2,
-    ariaLabel: "Wavre",
-  });
-        marker2.addListener("click", () => {
-    infowindow2.open({
-      anchor: marker2,
-      map,
-    });
-  });
-  const contentString3 =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    "</div>" +
-    '<h5 id="firstHeading" class="firstHeading">Narutomaki LLN</h5>' +
-    '<div id="bodyContent">' +
-    "<p>Grand Place, 1</p>" +
-    "<p>1342, LLN</p>"
-    "</div>" +
-    "</div>";
-        const infowindow3 = new google.maps.InfoWindow({
-    content: contentString3,
-    ariaLabel: "LLN",
-  });
-        marker3.addListener("click", () => {
-    infowindow3.open({
-      anchor: marker3,
-      map,
-    });
-  });
-      }
-      
-      window.initMap = initMap;</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>
 $('#myCollapsible').collapse({
   toggle: false
 })</script>
+<script>
+  var map = L.map('map').setView([50.7309955, 4.4856707], 10);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+  var marker = L.marker([50.8472, 4.3477]).addTo(map);
+  var marker1 = L.marker([50.7309955, 4.4856707]).addTo(map);
+  var marker2 = L.marker([50.7167, 4.6167]).addTo(map);
+  var marker3 = L.marker([50.6681, 4.6118]).addTo(map);
+  marker1.bindPopup("<b>Narutomaki La Hulpe</b><br>Place communale, 1<br>1310, La Hulpe");
+  marker.bindPopup("<b>Narutomaki Sainte Catherine</b><br>Place sainte catherine, 1<br>1000, Bruxelles");
+  marker2.bindPopup("<b>Narutomaki Wavre</b><br>Place Bosch, 1<br>1300, Wavre");
+  marker3.bindPopup("<b>Narutomaki LLN</b><br>Grand Place, 1<br>1420, LLN");
+  </script>
 </body>
 </html>
