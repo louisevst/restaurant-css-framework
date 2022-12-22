@@ -1,0 +1,23 @@
+body{
+    padding-top:63px;
+    background-image: url("./image/bel156_panacea_wood_slat_wallpaper_light_oak_ww1.jpg");
+    background-repeat: repeat;
+}
+iframe{
+    max-width: 100%;
+    max-height: 70%;
+    width: 100%;
+    height: 70%;
+}
+#map{
+    width: 100%;
+    height: 400px;
+}
+@media only screen and (min-width: 992px){
+    iframe{
+        max-width: 100%;
+        max-height: 100%;
+        width: 50%;
+        height: 70%;
+    }
+}

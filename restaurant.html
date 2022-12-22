@@ -4,9 +4,315 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Restaurant</title>
+    <link rel="icon" href="./image/ninja-g5a6522168_1280.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="restaurant.css">
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="./image/ninja-g5a6522168_1280.png" alt="a cute narutomaki with a headband" width="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="pictures.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="restaurant.html">Restaurant</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+          </ul>
+      </div>
+      </div>
+  </nav>
+  <section class="card bg-dark text-white my-4">
+    <img src="./image/banner.jpg" class="card-img" alt="Asian lanterns"/>
+    <div class="card-img-overlay d-flex align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <h1 class="card-title text-center">Our restaurants</h1>
+    </div>
+  </section>
+  <main class="container bg-light p-2 d-flex align-items-center justify-content-center">
+    <section class="row w-100 text-center">
+      <div class="col-12 col-lg-6">
+        <!--<ul class="list-group">
+          <li class="list-group-item">
+            <div class="mx-auto">
+              <div class="fw-bold">Narutomaki Sainte-Catherine</div>
+              Place Sainte-Catherine, 1<br>
+              1000, Bruxelles
+            </div>
+          </li>
+        </ul>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="mx-auto">
+              <div class="fw-bold">Narutomaki La Hulpe</div>
+              Place communale, 1<br>
+              1310, La Hulpe
+            </div>
+          </li>
+        </ul>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="mx-auto">
+              <div class="fw-bold">Narutomaki Wavre</div>
+              Place Bosch, 1<br>
+              1300, Wavre
+            </div>
+          </li>
+        </ul>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="mx-auto">
+              <div class="fw-bold">Narutomaki LLN</div>
+              Grand place, 1<br>
+              1342, LLN
+            </div>
+          </li>
+        </ul>
+      </div>-->
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Narutomaki Sainte-Catherine
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <h6>Location</h6>
+              <p>Place Sainte-Catherine, 1<br>1000, Bruxelles</p>
+              <h6>Opening Time</h6>
+              <p>Lunch: from 12 to 2.00 PM (from Tuesday to Saturday)<br>
+                Dinner: from 7 to 9.30 PM (from Tuesday to Saturday)</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Narutomaki La Hulpe
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <h6>Location</h6>
+              <p>Place Communale, 1<br>1310, La Hulpe</p>
+              <h6>Opening Time</h6>
+              <p>Lunch: from 12 to 2.00 PM (from Tuesday to Saturday)<br>
+                Dinner: from 7 to 9.30 PM (from Tuesday to Saturday)</p>            
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Narutomaki Wavre
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <h6>Location</h6>
+              <p>Place Bosch, 1<br>1300, Wavre</p>
+              <h6>Opening Time</h6>
+              <p>Lunch: from 12 to 2.00 PM (from Tuesday to Saturday)<br>
+                Dinner: from 7 to 9.30 PM (from Tuesday to Saturday)</p>            
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Narutomaki LLN
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+              <h6>Location</h6>
+              <p>Grand Place, 1<br>1342, LLN</p>
+              <h6>Opening Time</h6>
+              <p>Lunch: from 12 to 2.00 PM (from Tuesday to Saturday)<br>
+                Dinner: from 7 to 9.30 PM (from Tuesday to Saturday)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-12 col-lg-6 justify-content-center">
+        <div id="map"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-light text-center p-4 mt-4">
+    <div class="container">
+        <div class="row d-flex flex-wrap align-items-center justify-content-between">
+            <div class="col-4 offset-4 col-sm-2 offset-sm-5 offset-lg-0 col-lg-1">
+                <img src="./image/ninja-g5a6522168_1280.png" alt="a cute narutomaki with a headband" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-2">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+            </div>
+            <div class="col-12 col-lg-2">
+                <a href="menu.html" class="nav-item nav-link">Menu</a>
+            </div>
+            <div class="col-12 col-lg-2">
+                <a href="pictures.html" class="nav-item nav-link">Gallery</a>
+            </div>
+            <div class="col-12 col-lg-2">
+                <a href="restaurant.html" class="nav-item nav-link">Restaurant</a>
+            </div>
+            <div class="col-12 col-lg-2">
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <script>// Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const stcatherine = { lat: 50.8472, lng: 4.3477 };
+        const lahulpe = {lat:	50.7309955, lng:4.4856707};
+        const wavre = {lat:50.7167, lng:4.6167};
+        const lln = {lat:50.6681, lng:4.6118};
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: lahulpe,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: stcatherine,
+          map: map,
+          title: "Narutomaki La Hulpe"
+        });
+        const marker1 = new google.maps.Marker({
+          position: lahulpe,
+          map: map,
+        });
+        const marker2 = new google.maps.Marker({
+          position: wavre,
+          map: map,
+        });
+        const marker3 = new google.maps.Marker({
+          position: lln,
+          map: map,
+        });
+        const contentString1 =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h5 id="firstHeading" class="firstHeading">Narutomaki La Hulpe</h5>' +
+    '<div id="bodyContent">' +
+    "<p>Place communale, 1</p>" +
+    "<p>1310, La Hulpe</p>"
+    "</div>" +
+    "</div>";
+        const infowindow1 = new google.maps.InfoWindow({
+    content: contentString1,
+    ariaLabel: "La Hulpe",
+  });
+        marker1.addListener("click", () => {
+    infowindow1.open({
+      anchor: marker1,
+      map,
+    });
+  });
+  const contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h5 id="firstHeading" class="firstHeading">Narutomaki St Catherine</h5>' +
+    '<div id="bodyContent">' +
+    "<p>Place Sainte catherine, 1</p>" +
+    "<p>1000, Bruxelles</p>"
+    "</div>" +
+    "</div>";
+        const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    ariaLabel: "st catherine",
+  });
+        marker.addListener("click", () => {
+    infowindow.open({
+      anchor: marker,
+      map,
+    });
+  });
+  const contentString2 =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h5 id="firstHeading" class="firstHeading">Narutomaki Wavre</h5>' +
+    '<div id="bodyContent">' +
+    "<p>Place Bosch, 1</p>" +
+    "<p>1300, Wavre</p>"
+    "</div>" +
+    "</div>";
+        const infowindow2 = new google.maps.InfoWindow({
+    content: contentString2,
+    ariaLabel: "Wavre",
+  });
+        marker2.addListener("click", () => {
+    infowindow2.open({
+      anchor: marker2,
+      map,
+    });
+  });
+  const contentString3 =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h5 id="firstHeading" class="firstHeading">Narutomaki LLN</h5>' +
+    '<div id="bodyContent">' +
+    "<p>Grand Place, 1</p>" +
+    "<p>1342, LLN</p>"
+    "</div>" +
+    "</div>";
+        const infowindow3 = new google.maps.InfoWindow({
+    content: contentString3,
+    ariaLabel: "LLN",
+  });
+        marker3.addListener("click", () => {
+    infowindow3.open({
+      anchor: marker3,
+      map,
+    });
+  });
+      }
+      
+      window.initMap = initMap;</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+$('#myCollapsible').collapse({
+  toggle: false
+})</script>
+</body>
 </html>
