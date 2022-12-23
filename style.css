@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla&display=swap');
 body { 
     padding-top: 63px; 
     background-image: url("./image/background-g65394adf3_1920.png");
     background-repeat: repeat;
+    font-family: "Inconsolata";
 }
-
+h1,h2,h3,h4,h5,h6{
+    font-family: "Karla";
+}
+.ramen{
+    object-fit: cover;
+    width: 100%;
+    height: calc(100vh - 63px);
+}
 @media only screen and (min-width:992px) {
 .card{
     display: inline-block;
