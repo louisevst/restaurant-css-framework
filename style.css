@@ -3,9 +3,6 @@ body {
     background-image: url("./image/background-g65394adf3_1920.png");
     background-repeat: repeat;
 }
-.jumbotron{
-    background-color: rgba(78, 82, 112, 0.7);
-}
 
 @media only screen and (min-width:992px) {
 .card{
