@@ -6,6 +6,7 @@
     <title>Welcome</title>
     <link href="css\main.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="welcome.css">
     <link rel="icon" href="./image/narutomaki.png">
 </head>
   <body>
@@ -15,7 +16,7 @@
                 <img src="./image/ninja-g5a6522168_1280.png" alt="a cute narutomaki with a headband" width="50">
                 Narutomaki
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -33,18 +34,20 @@
             <a class="nav-link" href="restaurant.html">Restaurant</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+                <a class="btn btn-primary" type="button" href="contact.html">Contact</a>
             </li>
             </ul>
         </div>
         </div>
     </nav>
     <section class="jumbotron bg-info">
-        <main class="container-fluid p-0">
+    <main class="container-fluid p-0 m-0">
+        <div class="gradient w-100">
         <img src="./image/ramen.jpg" alt="a bowl of ramen" class="ramen">
-        <h1 class="my-4 p-0 text-center text-dark">Come and enjoy our fresh ramen!</h1>
-        <div class="text-center">
-        <a class="mb-4 btn btn-outline-dark btn-lg" role="button" href="menu.html">Discover the menu</a>
+        </div>
+        <div class="text-center carousel-caption">
+        <h1 class="my-4 p-0 text-light">Come and enjoy our fresh ramen!</h1>
+        <a class="mb-4 btn btn-outline-light btn-lg" role="button" href="menu.html">Discover the menu</a>
         </div>
     </main>
     </section>

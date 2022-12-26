@@ -13,15 +13,3 @@ h5,
 h6 {
   font-family: 'Karla';
 }
-.ramen {
-  object-fit: cover;
-  width: 100%;
-  height: calc(100vh - 63px);
-}
-@media only screen and (min-width: 992px) {
-  .card {
-    display: inline-block;
-    max-width: 49%;
-    vertical-align: top;
-  }
-}
