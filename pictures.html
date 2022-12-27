@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="Gallery" content="Picture of the restaurant/dishes" />
+    <meta name="description" content="Picture of the restaurant/dishes" />
     <title>Pictures</title>
     <link rel="icon" href="./image/narutomaki.png" />
     <link href="css\main.min.css" rel="stylesheet" />
@@ -16,9 +16,9 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.html" aria-label="Go to home page">
           <img
-            src="./image/ninja-g5a6522168_1280.png"
+            src="./image/ninja-.png"
             alt="a cute narutomaki with a headband"
             width="50"
           />
@@ -41,19 +41,35 @@
         >
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html" aria-label="Go to home page">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
+              <a class="nav-link" href="menu.html" aria-label="Go to the menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="pictures.html">Gallery</a>
+              <a
+                class="nav-link active"
+                href="pictures.html"
+                aria-label="Go to the gallery"
+                >Gallery</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="restaurant.html">Restaurant</a>
+              <a
+                class="nav-link"
+                href="restaurant.html"
+                aria-label="Go to restaurant page"
+                >Restaurant</a
+              >
             </li>
             <li class="nav-item">
-              <a class="btn btn-primary" type="button" href="contact.html">Contact</a>
+              <a
+                class="btn btn-primary"
+                type="button"
+                href="contact.html"
+                aria-label="Go to contact page"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -109,34 +125,59 @@
         <div class="row d-flex flex-wrap align-items-center justify-content-between">
           <div class="col-4 offset-4 col-sm-2 offset-sm-5 offset-lg-0 col-lg-1">
             <img
-              src="./image/ninja-g5a6522168_1280.png"
+              src="./image/ninja-.png"
               alt="a cute narutomaki with a headband"
               class="img-fluid"
             />
           </div>
           <div class="col-12 col-lg-2">
-            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="index.html" class="nav-item nav-link" aria-label="Go to home page"
+              >Home</a
+            >
           </div>
           <div class="col-12 col-lg-2">
-            <a href="menu.html" class="nav-item nav-link">Menu</a>
+            <a href="menu.html" class="nav-item nav-link" aria-label="Go to menu page"
+              >Menu</a
+            >
           </div>
           <div class="col-12 col-lg-2">
-            <a href="pictures.html" class="nav-item nav-link">Gallery</a>
+            <a
+              href="pictures.html"
+              class="nav-item nav-link"
+              aria-label="Go to gallery page"
+              >Gallery</a
+            >
           </div>
           <div class="col-12 col-lg-2">
-            <a href="restaurant.html" class="nav-item nav-link">Restaurant</a>
+            <a
+              href="restaurant.html"
+              class="nav-item nav-link"
+              aria-label="Go to restaurant page"
+              >Restaurant</a
+            >
           </div>
           <div class="col-12 col-lg-2">
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a
+              href="contact.html"
+              class="nav-item nav-link"
+              aria-label="Go to contact page"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
-      <div class="col-12 p-4 border-top border-4">
+      <div class="col-12 p-4 border-top border-2">
         Follow us !<br />
-        <a class="display-6" href="https://www.instagram.com"
+        <a
+          class="display-6"
+          href="https://www.instagram.com"
+          aria-label="Go to our instagram"
           ><i class="bi bi-instagram text-primary"></i
         ></a>
-        <a class="display-6" href="https://www.facebook.com"
+        <a
+          class="display-6"
+          href="https://www.facebook.com"
+          aria-label="Go to our facebook"
           ><i class="bi bi-facebook text-primary"></i
         ></a>
       </div>
