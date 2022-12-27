@@ -23,3 +23,8 @@
     vertical-align: top;
   }
 }
+@media only screen and (max-width: 256px) {
+  .ramen {
+    height: calc(100vh - 85px);
+  }
+}
