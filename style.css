@@ -4,6 +4,7 @@ body {
   background-image: url('./image/background-g65394adf3_1920.webp');
   background-repeat: repeat;
   font-family: 'Inconsolata';
+  min-height: 100vh;
 }
 h1,
 h2,

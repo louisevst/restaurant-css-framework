@@ -6,6 +6,9 @@
   max-height: 30vh;
   object-fit: cover;
 }
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 @media only screen and (max-width: 768px) {
   #map {
     aspect-ratio: 1 / 1;
