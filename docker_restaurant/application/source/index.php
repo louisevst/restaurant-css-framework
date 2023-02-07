@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="welcome page and news of the restaurant" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="welcome.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="icon" href="./image/narutomaki.png">
+</head>
+  <body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php" aria-label="Go to home page">
+                <img src="./image/ninja-.png" alt="a cute narutomaki with a headband" width="50">
+                Narutomaki
+            </a>
+            <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" href="index.php" aria-label="Go to home page">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="menu.php" aria-label="Go to the menu">Menu</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pictures.php" aria-label="Go to the gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="restaurant.html" aria-label="Go to restaurant page">Restaurant</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-primary" type="button" href="contact.php" aria-label="Go to contact page">Contact</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <section class="jumbotron bg-info p-0">
+    <main class="container-fluid p-0 m-0">
+        <div class="gradient w-100">
+        <img src="./image/ramen.webp" alt="a bowl of ramen" class="ramen">
+        </div>
+        <div class="text-center carousel-caption">
+        <h1 class="my-4 p-0 text-light">Come and enjoy our fresh ramen!</h1>
+        <a class="mb-4 btn btn-outline-light btn-lg" role="button" href="menu.php">Discover the menu</a>
+        </div>
+    </main>
+    </section>
+    <div class="container-fluid d-lg-flex justify-content-lg-around">
+    <section class="card my-4 mx-auto align-self-start">
+        <img src="./image/Buy-Premium-Quality-Japanese-Beer-Online.webp" alt="three bottle of japanese beer" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Free beer with our new spicy ramen</h5>
+            <p class="card-text">Will you dare to try it? Our new ramen is made with tonkatsu broth infused with chilis, served with tamago marinated in chili oil and a special breaded pork with hot cheetos breading.</p>
+            <p class="card-text">So come to our restaurant and treat yourself to a spicy, delicious meal and a cold, refreshing beer. This offer is available for a limited time, so don't miss out! We look forward to seeing you soon.</p>
+        </div>
+    </section>
+    <section class="card my-4 mx-auto">
+        <img src="./image/photo-1485579149621-3123dd979885.avif" alt="a microphone" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Karaoke Night every first saturday of the month !</h5>
+            <p class="card-text">Are you ready to sing your heart out and enjoy delicious ramen? Then come to our karaoke night!</p>
+
+            <p class="card-text">We've got a fantastic stage and a top-of-the-line karaoke system, so you can perform your favorite songs in front of a lively, supportive crowd. And after that, you can enjoy some of the best ramen in town. Our chefs have crafted a menu of delicious noodles, savory broth, and fresh toppings that will satisfy your cravings.</p>
+                
+            <p class="card-text">But karaoke night isn't just about the food and music - it's about having fun and making memories. Whether you're a seasoned karaoke pro or a first-timer, we welcome you to join us and belt out your favorite tunes. And with our extensive song selection and friendly staff, you'll have everything you need to have a great time.</p>
+            
+            <p class="card-text">So mark your calendars and come to our karaoke night. We can't wait to see you there!</p>
+        </div>
+    </section>
+    </div>
+    </div>
+    </div>
+    <footer class="bg-light text-center mt-4 sticky-bottom top-100">
+        <div class="container p-4">
+          <div class="row d-flex flex-wrap align-items-center justify-content-between">
+            <div class="col-4 offset-4 col-sm-2 offset-sm-5 offset-lg-0 col-lg-1">
+              <img
+                src="./image/ninja-.png"
+                alt="a cute narutomaki with a headband"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-lg-2">
+              <a href="index.php" class="nav-item nav-link text-dark" aria-label="Go to home page"
+                >Home</a
+              >
+            </div>
+            <div class="col-12 col-lg-2">
+              <a href="menu.php" class="nav-item nav-link text-dark" aria-label="Go to menu page"
+                >Menu</a
+              >
+            </div>
+            <div class="col-12 col-lg-2">
+              <a
+                href="pictures.php"
+                class="nav-item nav-link text-dark"
+                aria-label="Go to gallery page"
+                >Gallery</a
+              >
+            </div>
+            <div class="col-12 col-lg-2">
+              <a
+                href="restaurant.html"
+                class="nav-item nav-link text-dark"
+                aria-label="Go to restaurant page"
+                >Restaurant</a
+              >
+            </div>
+            <div class="col-12 col-lg-2">
+              <a
+                href="contact.php"
+                class="nav-item nav-link text-dark"
+                aria-label="Go to contact page"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 p-4 border-top border-2">
+          Follow us !<br />
+          <a
+            class="display-6"
+            href="https://www.instagram.com"
+            aria-label="Go to our instagram"
+            ><i class="bi bi-instagram text-dark"></i
+          ></a>
+          <a
+            class="display-6"
+            href="https://www.facebook.com"
+            aria-label="Go to our facebook"
+            ><i class="bi bi-facebook text-dark"></i
+          ></a>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

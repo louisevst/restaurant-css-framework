@@ -1,0 +1,23 @@
+#inputTag {
+  display: none;
+}
+body {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+#modal {
+  top: 20%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+}
+
+.btn-cute {
+  background-color: #df9790 !important;
+}
+@media only screen and (max-width: 256px) {
+  body {
+    padding-top: 90px;
+  }
+}
