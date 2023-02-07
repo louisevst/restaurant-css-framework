@@ -8,7 +8,7 @@ To access the backoffice you must go to http://localhost:4000/backoffice/login.p
 
 You can click [here](https://louisevst.github.io/restaurant-css-framework/) to see it live ! (but this version doesn't have the php part)
 
-![screenshot](https://github.com/louisevst/restaurant-css-framework/blob/backend/public/screenshot.png?raw=true)
+![screenshot](https://github.com/louisevst/restaurant-css-framework/blob/backend/image/screenshot.png?raw=true)
 
 <sup>Images from unsplash.com, pexels.com freepik.com and pixabay.com</sup>
 
