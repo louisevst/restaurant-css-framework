@@ -11,14 +11,14 @@ Discover my website [here](https://louisevst.github.io/restaurant-css-framework/
 
 ## Tech Used
 
-- Branch main:
+Branch main:
 
-Bootstrap
+- Bootstrap
 
-- Branch backend
+Branch backend:
 
-Docker
+- Docker
 
-PHP
+- PHP
 
-Bootstrap
+- Bootstrap
